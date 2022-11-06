@@ -1,0 +1,23 @@
+.filter_component{
+    display: flex;
+    height: 5rem;
+    justify-content: space-around;
+    margin: 0 2rem;
+    background: #DEC0F1;
+    align-items: center;
+    border-radius: 1rem;
+    
+}
+.line{
+    width: 0.1rem;
+    background-color: grey;
+}
+select{
+    border-radius: 1rem;
+    width: 17%;
+    height: 80%;
+    font-size: 120%;
+    display: flex;
+    text-transform: uppercase;
+    padding-left: 1%;
+    color: rgba(0, 0, 0, 0.5);}

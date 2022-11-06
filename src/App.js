@@ -1,23 +1,20 @@
-import logo from './logo.svg';
+import { useState } from 'react';
 import './App.css';
+import Filter from './components/Filter/Filter';
+import Main from './components/Main/Main';
+import Navbar from './components/Navbar/Navbar.js'
 
 function App() {
+  const [location,setLocation] = useState('none');
+  const [furnish, setfurnish] = useState('none');
+  const [rooms, setrooms] = useState('none'); 
+  const [baths, setBath] = useState('none');
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Navbar/>
+      <Filter setBath={setBath} setLocation={setLocation} setfurnish={setfurnish} setrooms={setrooms} location={location}/>
+      {/* {console.log(location)} */}
+      <Main location={location} furnish={furnish} rooms={rooms} baths={baths}/>
     </div>
   );
 }
