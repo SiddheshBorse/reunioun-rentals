@@ -2,6 +2,7 @@ import * as React from 'react';
 import './Filter.css'
 import rentalData from '../Data/data.json'
 const Filter = ({setLocation,setfurnish, setrooms,setBath,location}) => {
+  console.log(rentalData.hits[0])
   const uniquelocations = new Set();
   const furnishFiltered = new Set();
   const noRooms = new Set();

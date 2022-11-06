@@ -40,7 +40,8 @@ const Main = ({location,furnish,rooms,baths}) => {
       return data
     }
     else {
-      return data.baths == baths
+      var bath1 = Number(baths)
+      return data.baths === bath1
     }
   })
   
