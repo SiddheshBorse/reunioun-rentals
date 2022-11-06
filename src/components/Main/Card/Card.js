@@ -16,9 +16,6 @@ const Card = (props) => {
             <h4>Baths: {props.baths}</h4>
           </div>
       </div>
-      
-
-
       </div>
 
     </div>
