@@ -8,16 +8,16 @@ const Filter = ({setLocation,setfurnish, setrooms,setBath,location}) => {
   const completionStatus = new Set();
   // console.log(rentalData.hits[0])
   rentalData.hits.map((element) => {
-    uniquelocations.add(element.location[2].name)
+    return uniquelocations.add(element.location[2].name)
   })
   rentalData.hits.map((element) => {
-    furnishFiltered.add(element.furnishingStatus)
+    return furnishFiltered.add(element.furnishingStatus)
   })
   rentalData.hits.map((element) => {
-    noRooms.add(element.rooms +1)
+    return noRooms.add(element.rooms +1)
   })
   rentalData.hits.map((element) => {
-    completionStatus.add(element.baths)
+    return completionStatus.add(element.baths)
   })
 
   const array = [...uniquelocations]

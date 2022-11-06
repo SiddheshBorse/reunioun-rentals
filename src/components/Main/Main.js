@@ -6,7 +6,7 @@ import './Main.css'
 const Main = ({location,furnish,rooms,baths}) => {
   console.log(baths);
   const filtered = rentalData.hits.filter(data=>{
-    if(location =='none'){
+    if(location === 'none'){
       return data
     }
     else{
@@ -20,7 +20,7 @@ const Main = ({location,furnish,rooms,baths}) => {
     // location:'none'? 
 })
   const filtered2 = filtered.filter(data => {
-    if (furnish == 'none') {
+    if (furnish === 'none') {
       return data
     }
     else {
@@ -28,7 +28,7 @@ const Main = ({location,furnish,rooms,baths}) => {
     }
   })
   const filtered3 = filtered2.filter(data => {
-    if (rooms == 'none') {
+    if (rooms === 'none') {
       return data
     }
     else {
@@ -36,7 +36,7 @@ const Main = ({location,furnish,rooms,baths}) => {
     }
   })
   const filtered4 = filtered3.filter(data => {
-    if (baths == 'none') {
+    if (baths === 'none') {
       return data
     }
     else {
