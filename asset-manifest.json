@@ -1,13 +1,13 @@
 {
   "files": {
     "main.css": "/reunioun-rentals/home/static/css/main.88528806.css",
-    "main.js": "/reunioun-rentals/home/static/js/main.b59974fb.js",
+    "main.js": "/reunioun-rentals/home/static/js/main.75550b67.js",
     "index.html": "/reunioun-rentals/home/index.html",
     "main.88528806.css.map": "/reunioun-rentals/home/static/css/main.88528806.css.map",
-    "main.b59974fb.js.map": "/reunioun-rentals/home/static/js/main.b59974fb.js.map"
+    "main.75550b67.js.map": "/reunioun-rentals/home/static/js/main.75550b67.js.map"
   },
   "entrypoints": [
     "static/css/main.88528806.css",
-    "static/js/main.b59974fb.js"
+    "static/js/main.75550b67.js"
   ]
 }
